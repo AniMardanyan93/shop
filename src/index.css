@@ -13,6 +13,7 @@
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
+
 * {
     box-sizing: border-box !important;
     transition: ease all 0.5s;
@@ -212,7 +213,7 @@ button {
 .banner_bg_main {
     width: 100%;
     float: left;
-    background-image: url(../public/images/banner-bg.png);
+    background-image: url(../src/images/banner-bg.png);
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -285,8 +286,12 @@ button {
 /* header section start */
 
 .header_section {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     display: flex;
+}
+.header_section .container{
+    width: 100%;
 }
 
 .containt_main {
@@ -952,4 +957,3 @@ input.mail_bt::placeholder {
 }
 
 
-/* copyright section end */

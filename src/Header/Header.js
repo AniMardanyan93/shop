@@ -1,4 +1,5 @@
 import React from 'react'
+import IMAGES from '../images'
 
 export default function Header() {
     return (
@@ -25,7 +26,7 @@ export default function Header() {
                     <div className="container">
                         <div className="row">
                             <div className="col-sm-12">
-                                <div className="logo"><a href="#"><img src="images/logo.png" /></a></div>
+                                <div className="logo"><a href="#"><img src={IMAGES.logo} /></a></div>
                             </div>
                         </div>
                     </div>
@@ -40,15 +41,20 @@ export default function Header() {
                                 <a href="electronic.html">Electronic</a>
                                 <a href="jewellery.html">Jewellery</a>
                             </div>
-                            <span className="toggle_icon"><img src="../../public/images/toggle-icon.png" /></span>
+                            <span className="toggle_icon"><img src={IMAGES.toggleIcon} /></span>
                             <div className="dropdown">
-                                <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category
-                                </button>
-                                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                {/* <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category
+                                </button> */}
+                                <select>
+                                    <option value="action">Action</option>
+                                    <option value="action">Another action</option>
+                                    <option value="action">Something else here</option>
+                                </select>
+                                {/* <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <a className="dropdown-item" href="#">Action</a>
                                     <a className="dropdown-item" href="#">Another action</a>
                                     <a className="dropdown-item" href="#">Something else here</a>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="main">
                                 <div className="input-group">
@@ -62,16 +68,28 @@ export default function Header() {
                             </div>
                             <div className="header_box">
                                 <div className="lang_box ">
+                                    <select>
+                                        <option value="action">
+                                            {/* <img src={IMAGES.flagUK} alt="flag" className="mr-2 " title="United Kingdom" /> English <i className="fa fa-angle-down ml-2" aria-hidden="true"></i> */}
+                                            English
+                                        </option>
+                                        <option value="action">
+                                            {/* <img src={IMAGES.flagFrance} className="mr-2" alt="flag" /> */}
+                                            French
+                                        </option>
+                                    </select>
+                                </div>
+                                {/*
                                     <a href="#" title="Language" className="nav-link" data-toggle="dropdown" aria-expanded="true">
-                                        <img src="../../public/images/flag-uk.png" alt="flag" className="mr-2 " title="United Kingdom" /> English <i className="fa fa-angle-down ml-2" aria-hidden="true"></i>
+                                        <img src={IMAGES.flagUK} alt="flag" className="mr-2 " title="United Kingdom" /> English <i className="fa fa-angle-down ml-2" aria-hidden="true"></i>
                                     </a>
                                     <div className="dropdown-menu ">
                                         <a href="#" className="dropdown-item">
-                                            <img src="../../public/images/flag-france.png" className="mr-2" alt="flag" />
+                                            <img src={IMAGES.flagFrance} className="mr-2" alt="flag" />
                                             French
                                         </a>
-                                    </div>
-                                </div>
+                                    </div> */}
+                                {/* </div> */}
                                 <div className="login_menu">
                                     <ul>
                                         <li><a href="#">
@@ -88,7 +106,7 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
-                {/* <div className="banner_section layout_padding">
+                <div className="banner_section layout_padding">
                     <div className="container">
                         <div id="my_slider" className="carousel slide" data-ride="carousel">
                             <div className="carousel-inner">
@@ -100,7 +118,7 @@ export default function Header() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="carousel-item">
+                                {/* <div className="carousel-item">
                                     <div className="row">
                                         <div className="col-sm-12">
                                             <h1 className="banner_taital">Get Start <br />Your favriot shoping</h1>
@@ -115,7 +133,7 @@ export default function Header() {
                                             <div className="buynow_bt"><a href="#">Buy Now</a></div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                             <a className="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
                                 <i className="fa fa-angle-left"></i>
@@ -125,8 +143,8 @@ export default function Header() {
                             </a>
                         </div>
                     </div>
-                </div> */}
+                </div>
             </div>
-        </div>
+        </div >
     )
 }
