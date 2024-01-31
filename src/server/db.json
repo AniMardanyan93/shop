@@ -1,19 +1,14 @@
 {
     "products": [
-        {
-            "id": "1",
-            "name": "laptop1",
-            "price": "2500"
-        },
-        {
-            "id": "2",
-            "name": "laptop2",
-            "price": "2500"
-        },
-        {
-            "id": "3",
-            "name": "laptop3",
-            "price": "2500"
-        }
-    ]
-}
+      { "id": "1", "title": "notebook", "price": 100 },
+      { "id": "2", "title": "computer", "price": 200 },
+      { "id": "3", "title": "computer3", "price": 300 }
+    ],
+    "comments": [
+      { "id": "1", "text": "a comment about post 1", "postId": "1" },
+      { "id": "2", "text": "another comment about post 1", "postId": "1" }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }

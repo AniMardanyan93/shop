@@ -1,5 +1,5 @@
 import React from 'react'
-import IMAGES from '../images'
+import IMAGES from '../../images'
 
 export default function Header() {
     return (
